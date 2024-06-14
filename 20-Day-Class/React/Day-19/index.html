@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- <script defer src="./React.js" type="text/babel"></script> -->
+
+    <!-- <link href="./script.js" rel="script" type="text/JavaScript" /> -->
+
+    <title>React js Classes</title>
+  </head>
+  <body id="root">
+    <!-- <h1>Welcome to React js Classes</h1> -->
+    <!-- <script src="./React.js" type="text/babel"></script> -->
+    <script type="text/babel">
+      // const Tag1 = document.createElement("h1");
+      // Tag1.innerHTML = "welcome to react js class";
+      // const Tag2 = document.getElementById("root");
+      // Tag2.append(Tag1);
+
+      // const tag1 = React.createElement(
+      //   "h1",
+      //   { id: "1", style: { color: "red" } },
+      //   "welcome to react js course",
+      //   [
+      //     React.createElement("p", null, "Day-1 class of react js"),
+      //     React.createElement("div".null, "let's start day-1 class"),
+      //   ]
+      // );
+      // ReactDom.render(tag1, document.getElementById("root"), () => {
+      //   alert("render suc");
+      // });
+
+      function reuse() {
+        let tag1 = (
+          <h1 id="1" style={{ color: "red" }}>
+            Welcome to React js classes
+            <p>Day-1 classes fo react js</p>
+            <div>let's Start class</div>
+          </h1>
+        );
+        return tag1;
+      }
+
+      function reactCall() {
+        let functionalCall = (
+          <div>
+            {reuse()}, {reuse()}
+          </div>
+        );
+
+        ReactDOM.render(functionalCall, document.getElementById("root"), () => {
+          alert("render successfully");
+        });
+      }
+
+      reactCall();
+    </script>
+  </body>
+</html>

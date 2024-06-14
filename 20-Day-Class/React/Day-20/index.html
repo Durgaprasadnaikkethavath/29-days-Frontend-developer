@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>React js Classes</title>
+  </head>
+  <body id="root">
+    <script type="text/babel">
+      function reactReuse(name, age, img) {
+        return (
+          <div
+            style={{
+              width: "250px",
+              textAlign: "center",
+              boxShadow: "0 0 10px black",
+              padding: "10px",
+            }}
+          >
+            <img src={img} alt="userPhoto" width="100%" height="300px" />
+            <h1>{name}</h1>
+            <p>{age}</p>
+          </div>
+        );
+      }
+
+      function reactCall() {
+        return (
+          <div>
+            {reactReuse(
+              "Tata",
+              89,
+              "https://assets.gqindia.com/photos/645e034efc79052643f24e8e/16:9/w_1920,c_limit/Ratan-Tata.jpg"
+            )}
+            {reactReuse(
+              "Sundar Pichai",
+              51,
+              "https://sugermint.com/wp-content/uploads/2020/04/Biography-of-Sundar-Pichai.jpg"
+            )}
+            {reactReuse(
+              "Nadella Satya",
+              56,
+              "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202306/rtx6otlw-sixteen_nine.jpg?VersionId=G9LYYNj7sPJp7BvqwTUD95L69H74FjNB&size=690:388"
+            )}
+            {reactReuse(
+              "Jaya Varma Sinha",
+              60,
+              "https://sambadenglish.com/wp-content/uploads/2023/08/Jaya-Verma-Sinha-e1693478762805.jpg"
+            )}
+          </div>
+        );
+      }
+      ReactDOM.render(reactCall(), document.getElementById("root"));
+      reactCall();
+    </script>
+  </body>
+</html>

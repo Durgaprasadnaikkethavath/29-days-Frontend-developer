@@ -1,0 +1,81 @@
+/* css style sheet */
+/* three type of style
+    1.Inline style
+    2.Internal style
+    3.External style
+ */
+
+/* external css properties */
+html {
+  background-color: #f8f8ff;
+}
+
+/*  css - selectors and properties */
+/* 1.   ID--: #,
+    2.  CLASS --:  .     */
+
+/* ID--- # */
+#id-main-header {
+  color: red;
+  text-align: center;
+}
+
+/* class -- .     */
+
+.header-class {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 0.5;
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+}
+h2 {
+  color: rgb(140, 82, 19);
+}
+h3 {
+  color: rgb(58, 46, 70);
+}
+h4 {
+  color: rgb(142, 17, 54);
+}
+h5 {
+  color: rgb(61, 8, 110);
+}
+h6 {
+  color: rgb(37, 154, 24);
+}
+
+ul > li {
+  list-style-type: square;
+}
+li {
+  font-size: 25px;
+}
+
+p {
+  font-size: 30px;
+}
+
+form {
+  text-align: center;
+  padding: 20px;
+  background-color: blueviolet;
+}
+
+.label {
+  font-size: 30px;
+}
+
+a:hover {
+  background-color: blueviolet;
+  color: red;
+}
+
+table {
+  height: 250px;
+  width: 500px;
+  background-color: blanchedalmond;
+}

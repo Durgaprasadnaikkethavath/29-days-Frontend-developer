@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>React components and props</title>
+  </head>
+  <body id="root">
+    <script type="text/babel">
+      function ReactReuse(props) {
+        return (
+          <div
+            style={{
+              width: "250px",
+              textAlign: "center",
+              boxShadow: "0 0 10px black",
+              padding: "10px",
+            }}
+          >
+            <img src={props.img} alt="userPhoto" width="100%" height="150px" />
+            <h2>{props.name}</h2>
+            <p>{props.age}</p>
+          </div>
+        );
+      }
+
+      function ReactCall() {
+        return (
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <ReactReuse
+              name="Tata"
+              age={89}
+              img="https://assets.gqindia.com/photos/645e034efc79052643f24e8e/16:9/w_1920,c_limit/Ratan-Tata.jpg"
+            />
+            <ReactReuse
+              name="Sundar Pichai"
+              age={51}
+              img="https://sugermint.com/wp-content/uploads/2020/04/Biography-of-Sundar-Pichai.jpg"
+            />
+            <ReactReuse
+              name="Nadella Satya"
+              age={56}
+              img="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202306/rtx6otlw-sixteen_nine.jpg?VersionId=G9LYYNj7sPJp7BvqwTUD95L69H74FjNB&size=690:388"
+            />
+            <ReactReuse
+              name="Jaya Varma Sinha"
+              age={60}
+              img="https://sambadenglish.com/wp-content/uploads/2023/08/Jaya-Verma-Sinha-e1693478762805.jpg"
+            />
+          </div>
+        );
+      }
+      ReactDOM.render(<ReactCall />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+/* day - 4 class form css topics
+
+  1.styling text
+  2.box model
+  3.block-level elements
+  4.in-line element
+  5.float
+
+
+ */
+
+/* styling text */
+
+p,
+span {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: bisque;
+  color: #333;
+}
+
+/* box - model 
+  1.margin
+  2.border
+  3.padding --- top right bottom left ;
+*/
+
+p {
+  padding: 10px 30px 10px 30px;
+  border: 10px solid orangered;
+  margin: 20px;
+
+  display: inline-block;
+}
+
+span {
+  padding: 10px;
+  border: 10px solid green;
+  margin: 30px 20px 30px 20px;
+
+  display: block;
+}
+
+/* block -  level elements */
+
+/* p {
+  display: inline;
+} */
+
+img {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+
+  float: right;
+}

@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+}
+
+marquee {
+  padding: 20px;
+  color: rgb(210, 134, 10);
+  background-color: aliceblue;
+}
+header {
+  background-color: #454545;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #8a8a8a;
+  padding: 8px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 8px;
+}
+
+section {
+  padding: 10px;
+}
+
+article {
+  padding: 25px;
+}
+aside {
+  padding: 25px;
+}
+
+footer {
+  background-color: #454545;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+table {
+  width: 100%;
+  margin-top: 1em;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #a9bd4f;
+}
+th,
+td {
+  padding: 0.8em;
+  text-align: center;
+}
